@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animated Typing</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./typed.js"></script>
+	</head>
+	<body>
+		<div id="typed-strings">
+			<p>ときのそら</p>
+			<p>ロボ子さん</p>
+			<p>さくらみこ</p>
+			<p>星街すいせい</p>
+			<p>夜空メル</p>
+			<p>アキ・ローゼ</p>
+			<p>赤井はあと</p>
+			<p>白上フブキ</p>
+			<p>夏色まつり</p>
+			<p>湊あくあ</p>
+			<p>紫咲シオン</p>
+			<p>百鬼あやめ</p>
+			<p>癒月ちょこ</p>
+			<p>大空スバル</p>
+			<p>大神ミオ</p>
+			<p>猫又おかゆ</p>
+			<p>戌神ころね</p>
+			<p>兎田ぺこら</p>
+			<p>潤羽るしあ</p>
+			<p>不知火フレア</p>
+			<p>白銀ノエル</p>
+			<p>宝鐘マリン</p>
+			<p>天音かなた</p>
+			<p>桐生ココ</p>
+			<p>角巻わため</p>
+			<p>常闇トワ</p>
+			<p>姫森ルーナ</p>
+			<p>雪花ラミィ</p>
+			<p>桃鈴ねね</p>
+			<p>獅白ぼたん</p>
+			<p>魔乃アロエ</p>
+			<p>尾丸ポルカ</p>
+		</div>
+
+		<div class="center">
+			<span id="type"></span>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				var typed = new Typed('#type', {
+					stringsElement: '#typed-strings',
+					backSpeed: 120,
+					typeSpeed: 240,
+					loop: true,
+					loopCount: Infinity,
+					preStringTyped: (arrayPos, self) => {
+						console.log('DONE');
+					},
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+$primary-color: #37adde;
+$secondary-color: #49bef1;
+$tertiary-color: #b2f2ff;
+$text-color: white;
+$supporting-color: #5edeec;
+
+body {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 10rem;
+
+	background: $primary-color;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 60%;
+	min-height: 300px;
+	padding: 30px;
+	background: $secondary-color;
+	text-align: center;
+
+	border-radius: 40px;
+	border: $tertiary-color 15px solid;
+}
+
+.input-container {
+	min-height: 100%;
+}
+
+#type {
+	color: $text-color;
+}
+
+.typed-cursor {
+	color: $text-color;
+}
